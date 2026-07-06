@@ -60,7 +60,7 @@ public class Main {
                         @Override
                         public void ejecutar(Hacker h, Contramedida c) {
                             System.out.println(" -> [Script Anónimo] Parcheando cortafuegos del Hacker. +30 Integridad.");
-                            h.recibirDanio(-30); 
+                            h.recibirDaño(-30); 
                         }
                     };
                     scriptInyeccion.ejecutar(hacker, null);
@@ -89,10 +89,10 @@ public class Main {
                         rm.encriptarMemoria(hacker);
                     } else if (amenaza instanceof CentinelaIA) {
                         System.out.println(" -> La IA Centinela está analizando tus puertos de conexión.");
-                        hacker.recibirDanio(15);
+                        hacker.recibirDaño(15);
                     } else if (amenaza instanceof Virus) {
                         System.out.println(" -> El Virus ralentiza tu velocidad de descarga.");
-                        hacker.recibirDanio(10);
+                        hacker.recibirDaño(10);
                     }
 
                     if (amenaza.getSeguridad() == 0) {

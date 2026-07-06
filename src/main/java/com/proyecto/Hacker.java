@@ -21,7 +21,7 @@ public class Hacker {
         return fragmentosCore; 
     }
 
-    public void recibirDanio(int cantidad) {
+    public void recibirDaño(int cantidad) {
         this.integridad -= cantidad;
         if (this.integridad < 0) this.integridad = 0;
         System.out.println(" > Integridad del Hacker disminuida a: " + this.integridad + "%");

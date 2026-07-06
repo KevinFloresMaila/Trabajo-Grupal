@@ -6,6 +6,6 @@ public final class Ransomware extends Contramedida {
     // Método exclusivo para demostrar Downcasting
     public void encriptarMemoria(Hacker hacker) {
         System.out.println(" [\u26A1] ¡ALERTA! El Ransomware ha encriptado tus herramientas.");
-        hacker.recibirDanio(25);
+        hacker.recibirDaño(25);
     }
 }
